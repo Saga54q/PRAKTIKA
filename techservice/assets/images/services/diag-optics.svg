@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" fill="none">
+  <rect width="480" height="280" fill="#0B192C"/>
+  <g stroke="#1E3A5F" stroke-width="1">
+    <path d="M0 40H480M0 80H480M0 120H480M0 160H480M0 200H480M0 240H480"/>
+    <path d="M60 0V280M120 0V280M180 0V280M240 0V280M300 0V280M360 0V280M420 0V280"/>
+  </g>
+  <rect x="76" y="54" width="328" height="172" rx="8" fill="#112540" stroke="#284B73" stroke-width="1.5"/>
+  <circle cx="176" cy="140" r="54" fill="#081221" stroke="#38BDF8" stroke-width="1.8"/>
+  <circle cx="176" cy="140" r="36" stroke="#0284C7" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <circle cx="176" cy="140" r="14" stroke="#E2E8F0" stroke-width="1.5"/>
+  <path d="M176 76V96M176 184V204M112 140H132M220 140H240" stroke="#38BDF8" stroke-width="1.5"/>
+  <path d="M230 126L302 104V176L230 154Z" fill="#0284C7" fill-opacity="0.22" stroke="#38BDF8" stroke-width="1.4"/>
+  <rect x="302" y="96" width="76" height="88" rx="4" fill="#081221" stroke="#335C8A" stroke-width="1.5"/>
+  <rect x="316" y="112" width="48" height="32" rx="2" fill="#162E4D" stroke="#0284C7"/>
+  <path d="M322 128H358" stroke="#38BDF8" stroke-width="1.5"/>
+  <rect x="316" y="154" width="48" height="6" rx="2" fill="#475569"/>
+  <rect x="316" y="166" width="34" height="6" rx="2" fill="#38BDF8"/>
+  <text x="92" y="72" fill="#94A3B8" font-family="monospace" font-size="11">DIAG-02 // OPTO-SENSOR</text>
+</svg>

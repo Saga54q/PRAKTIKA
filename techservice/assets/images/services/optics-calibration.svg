@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" fill="none">
+  <rect width="480" height="280" fill="#0B192C"/>
+  <g stroke="#1E3A5F" stroke-width="1">
+    <path d="M0 40H480M0 80H480M0 120H480M0 160H480M0 200H480M0 240H480"/>
+    <path d="M60 0V280M120 0V280M180 0V280M240 0V280M300 0V280M360 0V280M420 0V280"/>
+  </g>
+  <rect x="70" y="54" width="340" height="172" rx="8" fill="#112540" stroke="#284B73" stroke-width="1.5"/>
+  <path d="M96 140H384" stroke="#475569" stroke-dasharray="5 5" stroke-width="1.2"/>
+  <path d="M104 114L192 114L276 140L368 140" stroke="#38BDF8" stroke-width="2"/>
+  <path d="M104 166L192 166L276 140L368 140" stroke="#38BDF8" stroke-width="2"/>
+  <path d="M188 86C202 118 202 162 188 194C174 162 174 118 188 86Z" fill="#0284C7" fill-opacity="0.3" stroke="#E2E8F0" stroke-width="1.6"/>
+  <path d="M276 98C288 122 288 158 276 182C264 158 264 122 276 98Z" fill="#38BDF8" fill-opacity="0.25" stroke="#38BDF8" stroke-width="1.6"/>
+  <circle cx="368" cy="140" r="8" fill="#38BDF8"/>
+  <circle cx="368" cy="140" r="16" stroke="#0284C7" stroke-width="1.4"/>
+  <text x="92" y="74" fill="#94A3B8" font-family="monospace" font-size="11">OPT-01 // AXIS ALIGNMENT</text>
+</svg>

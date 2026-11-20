@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" fill="none">
+  <rect width="480" height="280" fill="#0B192C"/>
+  <g stroke="#1E3A5F" stroke-width="1">
+    <path d="M0 40H480M0 80H480M0 120H480M0 160H480M0 200H480M0 240H480"/>
+    <path d="M60 0V280M120 0V280M180 0V280M240 0V280M300 0V280M360 0V280M420 0V280"/>
+  </g>
+  <rect x="78" y="48" width="324" height="184" rx="8" fill="#10293D" stroke="#0284C7" stroke-width="1.6"/>
+  <path d="M110 92H172L190 110H220M110 140H176M110 188H168L192 164H220M260 110H310L334 86H370M260 140H370M260 170H314L338 194H370" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+  <rect x="204" y="102" width="72" height="72" rx="4" fill="#081221" stroke="#E2E8F0" stroke-width="1.6"/>
+  <rect x="220" y="118" width="40" height="40" rx="2" fill="#162E4D" stroke="#38BDF8" stroke-width="1.2"/>
+  <g stroke="#94A3B8" stroke-width="2">
+    <path d="M214 96V102M228 96V102M242 96V102M256 96V102M266 96V102"/>
+    <path d="M214 174V180M228 174V180M242 174V180M256 174V180M266 174V180"/>
+    <path d="M198 112H204M198 126H204M198 140H204M198 154H204M198 166H204"/>
+    <path d="M276 112H282M276 126H282M276 140H282M276 154H282M276 166H282"/>
+  </g>
+  <circle cx="110" cy="92" r="4" fill="#38BDF8"/>
+  <circle cx="110" cy="140" r="4" fill="#38BDF8"/>
+  <circle cx="110" cy="188" r="4" fill="#38BDF8"/>
+  <circle cx="370" cy="86" r="4" fill="#38BDF8"/>
+  <circle cx="370" cy="140" r="4" fill="#38BDF8"/>
+  <circle cx="370" cy="194" r="4" fill="#38BDF8"/>
+  <text x="96" y="68" fill="#94A3B8" font-family="monospace" font-size="11">ELEC-01 // PCB SMD/BGA</text>
+</svg>

@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Адаптивные правила для планшетов и мобильных устройств
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .principles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-two-col,
+    .request-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .section {
+        padding: 44px 0;
+    }
+
+    .hero-section {
+        padding: 44px 0;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .page-title {
+        font-size: 1.625rem;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    /* Мобильное меню */
+    .nav-toggle {
+        display: inline-flex;
+    }
+
+    .site-nav {
+        position: fixed;
+        top: 74px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 200;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        padding: 20px 16px 32px;
+        background-color: var(--bg-surface);
+        border-top: 1px solid var(--border);
+        overflow-y: auto;
+        transform: translateY(-8px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+    }
+
+    .site-nav.is-open {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+    }
+
+    .nav-link {
+        padding: 12px 14px;
+        font-size: 1rem;
+    }
+
+    .nav-actions .btn {
+        width: 100%;
+        padding: 12px 18px;
+    }
+
+    .categories-grid,
+    .services-grid,
+    .services-grid-featured,
+    .principles-grid,
+    .contacts-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-search-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cta-band-inner,
+    .contacts-cta-card,
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .request-form {
+        padding: 20px 16px;
+    }
+
+    .request-success-card {
+        flex-direction: column;
+        padding: 20px 16px;
+    }
+
+    .summary-row {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-subtitle {
+        display: none;
+    }
+
+    .service-card-footer {
+        flex-direction: column;
+    }
+
+    .service-card-footer .btn {
+        width: 100%;
+    }
+
+    .modal-footer {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+}

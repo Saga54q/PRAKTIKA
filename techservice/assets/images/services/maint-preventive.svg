@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" fill="none">
+  <rect width="480" height="280" fill="#0B192C"/>
+  <g stroke="#1E3A5F" stroke-width="1">
+    <path d="M0 40H480M0 80H480M0 120H480M0 160H480M0 200H480M0 240H480"/>
+    <path d="M60 0V280M120 0V280M180 0V280M240 0V280M300 0V280M360 0V280M420 0V280"/>
+  </g>
+  <rect x="78" y="52" width="324" height="176" rx="8" fill="#112540" stroke="#284B73" stroke-width="1.5"/>
+  <rect x="106" y="88" width="128" height="104" rx="4" fill="#081221" stroke="#335C8A" stroke-width="1.5"/>
+  <path d="M126 114H214M126 132H214M126 150H214M126 168H214" stroke="#0284C7" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="318" cy="140" r="44" fill="#081221" stroke="#38BDF8" stroke-width="1.8"/>
+  <path d="M318 96V110M318 170V184M274 140H288M348 140H362" stroke="#E2E8F0" stroke-width="1.6"/>
+  <path d="M298 140L312 154L340 124" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="106" y="72" fill="#94A3B8" font-family="monospace" font-size="11">MNT-01 // PREVENTIVE</text>
+</svg>

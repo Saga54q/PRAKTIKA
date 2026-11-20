@@ -1,0 +1,363 @@
+/* ==========================================================================
+   Каталог услуг: поиск, фильтрация, карточки и модальное окно
+   ========================================================================== */
+
+.catalog-controls {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 22px;
+    margin-bottom: 28px;
+    box-shadow: var(--shadow-sm);
+}
+
+.catalog-search-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.search-field-wrap {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 14px;
+    display: inline-flex;
+    color: var(--text-light);
+    pointer-events: none;
+}
+
+.search-input {
+    width: 100%;
+    height: 44px;
+    padding: 10px 92px 10px 42px;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-md);
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-size: 0.9375rem;
+    transition: border-color var(--transition), background-color var(--transition), box-shadow var(--transition);
+}
+
+.search-input:focus {
+    outline: none;
+    background-color: var(--bg-surface);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.14);
+}
+
+.search-clear-btn {
+    position: absolute;
+    right: 10px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-muted);
+    color: var(--text-secondary);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.search-clear-btn:hover {
+    background-color: var(--border);
+    color: var(--text-primary);
+}
+
+.category-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.filter-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-surface);
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: border-color var(--transition), background-color var(--transition), color var(--transition);
+}
+
+.filter-pill:hover {
+    border-color: var(--accent);
+    color: var(--accent-hover);
+    background-color: var(--info-bg);
+}
+
+.filter-pill.is-active {
+    background-color: var(--navy-900);
+    border-color: var(--navy-900);
+    color: #FFFFFF;
+}
+
+.filter-count {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    padding: 1px 6px;
+    border-radius: var(--radius-sm);
+    background-color: rgba(148, 163, 184, 0.2);
+}
+
+.filter-pill.is-active .filter-count {
+    background-color: rgba(56, 189, 248, 0.2);
+    color: #E0F2FE;
+}
+
+.catalog-meta-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.catalog-result-count {
+    margin: 0;
+}
+
+.reset-filters-link {
+    font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   Сетка карточек услуг
+   -------------------------------------------------------------------------- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.services-grid-featured {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.service-card:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.service-card-media {
+    background-color: var(--navy-900);
+    border-bottom: 1px solid var(--border);
+    aspect-ratio: 12 / 7;
+    overflow: hidden;
+}
+
+.service-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-card-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.service-category-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--radius-sm);
+    background-color: var(--accent-soft);
+    color: var(--accent-hover);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.service-code {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.service-card-title {
+    margin: 0 0 10px;
+    font-size: 1.0625rem;
+    line-height: 1.35;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.service-card-desc {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
+}
+
+.service-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    background-color: var(--bg-page);
+    border-top: 1px solid var(--border);
+}
+
+.service-card-footer .btn {
+    flex: 1;
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 48px 24px;
+    background-color: var(--bg-surface);
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius-md);
+}
+
+.empty-state-title {
+    margin: 0 0 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.empty-state-text {
+    margin: 0 auto 20px;
+    max-width: 48ch;
+    color: var(--text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   Модальное окно подробностей услуги
+   -------------------------------------------------------------------------- */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(7, 19, 36, 0.72);
+    backdrop-filter: blur(3px);
+}
+
+.modal-backdrop[hidden] {
+    display: none;
+}
+
+.modal-dialog {
+    width: 100%;
+    max-width: 640px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 22px;
+    border-bottom: 1px solid var(--border);
+}
+
+.modal-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-surface);
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background-color: var(--bg-muted);
+    color: var(--text-primary);
+}
+
+.modal-media {
+    background-color: var(--navy-900);
+    border-bottom: 1px solid var(--border);
+    max-height: 240px;
+    overflow: hidden;
+}
+
+.modal-media img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.modal-body {
+    padding: 22px;
+}
+
+.modal-title {
+    margin: 0 0 12px;
+    font-size: 1.375rem;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.modal-description {
+    margin: 0;
+    font-size: 0.96875rem;
+    line-height: 1.65;
+    color: var(--text-secondary);
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 16px 22px;
+    background-color: var(--bg-page);
+    border-top: 1px solid var(--border);
+}
